@@ -2,7 +2,7 @@ package com.xhao.androidpractice.draw;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
+import android.util.Log;
 
 import com.xhao.androidpractice.R;
 
@@ -11,8 +11,9 @@ import com.xhao.androidpractice.R;
  */
 public class MyViewActivity extends Activity {
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d("MyViewActivity", "execute on create - - - >");
         setContentView(R.layout.activity_myview_test);
     }
 }
